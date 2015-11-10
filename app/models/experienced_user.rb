@@ -1,0 +1,2 @@
+class ExperiencedUser < User
+end
