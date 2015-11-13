@@ -1,6 +1,6 @@
 class AddDeviseToUsers < ActiveRecord::Migration
   def self.up
-    change_table(:users) do |t|
+    create_table(:users) do |t|
       ## Database authenticatable
       t.string :email,              null: false, default: ""
       t.string :encrypted_password, null: false, default: ""
@@ -28,8 +28,6 @@ class AddDeviseToUsers < ActiveRecord::Migration
       t.date :date_of_birth
       t.string :avatar
       
-
-
       ## Confirmable
       # t.string   :confirmation_token
       # t.datetime :confirmed_at
