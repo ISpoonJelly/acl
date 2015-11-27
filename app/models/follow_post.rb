@@ -1,3 +1,6 @@
 class FollowPost < ActiveRecord::Base
-	has_many :users
+	belongs_to :user, foreign_key: 'id'
+	belongs_to :post, foreign_key: 'id'
+
+
 end

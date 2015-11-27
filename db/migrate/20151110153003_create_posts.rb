@@ -3,7 +3,7 @@ class CreatePosts < ActiveRecord::Migration
     create_table :posts do |t|
     	t.string :post
     	t.string :tags
-    	t.string :type
+    	t.string :post_type
     	t.string :attachment
       	t.timestamps null: false
     end
